@@ -140,6 +140,19 @@ body {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1); }
+  .side-nav__item:hover::before {
+    transform: scaleY(1);
+    width: 100%; }
   .side-nav__link:link, .side-nav__link:visited {
     color: var(--color-grey-light-1);
     text-decoration: none;

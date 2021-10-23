@@ -120,3 +120,47 @@
     }
   }
 }
+
+
+////////////////////////////////////////////////////
+// SIDE NAVIGATION
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  padding: 2.5rem;
+}
+
+.side-nav {
+  font-size: 1.4rem;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+
+  }
+
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1.75em;
+    width: 1.75em;
+    margin-right: 2rem;
+    fill: currentColor;
+  }
+}
+
+

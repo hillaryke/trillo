@@ -133,6 +133,7 @@
 
 .side-nav {
   font-size: 1.4rem;
+  list-style: none;
 
   &__item {
     position: relative;
@@ -140,7 +141,6 @@
     &:not(:last-child) {
       margin-bottom: .5rem;
     }
-
   }
 
 
@@ -154,11 +154,12 @@
     background-color: var(--color-primary);
     //transform-origin: bottom;
     transform: scaleY(0);
-    transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1);
+    transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
   }
 
 
-  &__item:hover::before {
+  &__item:hover::before,
+  &__item--active:before {
     transform: scaleY(1);
     width: 100%;
   }
@@ -170,6 +171,9 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
+
+    position: relative;
+    z-index: 1000;
 
     display: flex;
     align-items: center;

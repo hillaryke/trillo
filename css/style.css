@@ -135,7 +135,8 @@ body {
   padding: 2.5rem; }
 
 .side-nav {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  list-style: none; }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -149,8 +150,8 @@ body {
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1); }
-  .side-nav__item:hover::before {
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
+  .side-nav__item:hover::before, .side-nav__item--active:before {
     transform: scaleY(1);
     width: 100%; }
   .side-nav__link:link, .side-nav__link:visited {
@@ -158,6 +159,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 1000;
     display: flex;
     align-items: center; }
   .side-nav__icon {

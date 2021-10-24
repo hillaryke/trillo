@@ -367,6 +367,7 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
+  background-color: #fff;
   flex: 1; }
 
 .detail {

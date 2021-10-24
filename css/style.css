@@ -358,24 +358,31 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   border: none;
   border-radius: 100px;
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark)); }
-  .btn__visible {
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn > * {
     display: inline-block;
-    padding: 2rem 7.5rem; }
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 9rem; }
   .btn__invisible {
-    display: none; }
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%; }
   .btn:hover {
-    cursor: pointer; }
-
-@keyframes bookswipe {
-  0% {
-    transform: translateY(-30px);
-    opacity: 0;
-    display: none; }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    display: block; } }
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
 
 .container {
   max-width: 120rem;

@@ -328,7 +328,12 @@
   padding: 3rem 0;
   border-top: var(--line);
 
+  display: flex;
+  flex-wrap: wrap;
 
+  &__item {
+    flex: 0 0 50%;
+  }
 }
 
 ////////////////////////////////////////////////////

@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
     width: 1.75em;
     margin-right: 2rem;
     fill: currentColor; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .side-nav__icon {
         margin-right: 0;
         margin-bottom: .7rem;

@@ -42,6 +42,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open-sans', sans-serif;
@@ -390,6 +393,9 @@ body::-webkit-scrollbar {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0; } }
 
 .header {
   font-size: 1.4rem;

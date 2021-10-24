@@ -327,6 +327,7 @@
   margin: 3rem 0;
   padding: 3rem 0;
   border-top: var(--line);
+  border-bottom: var(--line);
 
   display: flex;
   flex-wrap: wrap;
@@ -358,4 +359,34 @@
   }
 }
 
-//////////////////////////////////////////////////// // RECOMMEND
+////////////////////////////////////////////////////
+// RECOMMEND
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+
+  &__count {
+  }
+
+  &__friends {
+    margin-left: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+
+  }
+}
+

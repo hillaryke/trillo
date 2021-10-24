@@ -266,8 +266,7 @@ body {
     height: 2rem;
     width: 2rem;
     margin-right: .7rem;
-    background-image: url("../img/chevron-thin-right.svg");
-    background-size: cover; }
+    background-color: var(--color-primary); }
 
 .container {
   max-width: 120rem;

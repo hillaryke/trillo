@@ -344,8 +344,13 @@
     margin-right: .7rem;
 
     // Older browsers
-    background-image: url("../img/chevron-thin-right.svg");
-    background-size: cover;
+    //background-image: url("../img/chevron-thin-right.svg");
+    //background-size: cover;
+
+    //Newer browsers - masks
+    background-color: var(--color-primary);
+
+
   }
 }
 
